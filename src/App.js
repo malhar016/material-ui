@@ -1,29 +1,15 @@
-import {
-  AppBar,
-  Box,
-  Container,
-  Grid,
-  List,
-  ListItem,
-  Menu,
-  MenuItem,
-  Toolbar,
-  Typography,
-} from "@material-ui/core";
+import { Box } from "@mui/material";
 
 import React from "react";
+import Navbar from "./Navbar";
+
+const links = ["FORM", "MODELS", "COMPONENTS"];
 
 const App = (props) => {
   return (
-    <AppBar sx={{ background: "green" }}>
-      <Toolbar>
-        <Grid container>
-          <Grid item xs={2}>
-            <Typography>Hello</Typography>
-          </Grid>
-        </Grid>
-      </Toolbar>
-    </AppBar>
+    <Box>
+      <Navbar links={links} />
+    </Box>
   );
 };
 
